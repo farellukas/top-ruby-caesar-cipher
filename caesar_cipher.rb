@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def caesar_cipher(string, shift)
-  encoded = ""
+  encoded = ''
   string.chars.each do |char|
     if char >= 'a' && char <= 'z'
       new_ord = (char.ord + shift - 'a'.ord) % 26 + 'a'.ord
@@ -13,6 +15,6 @@ def caesar_cipher(string, shift)
       encoded << char
     end
   end
-  
-  return encoded
+
+  encoded
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def bubble_sort(arr)
   n = arr.length
   arr.each_with_index do |_, i|
@@ -8,5 +10,5 @@ def bubble_sort(arr)
   arr
 end
 
-p bubble_sort([4,3,78,2,0,2]) # [0, 2, 2, 3, 4, 78]
-p [4,3,78,2,0,2].sort # [0, 2, 2, 3, 4, 78]
+p bubble_sort([4, 3, 78, 2, 0, 2]) # [0, 2, 2, 3, 4, 78]
+p [4, 3, 78, 2, 0, 2].sort # [0, 2, 2, 3, 4, 78]

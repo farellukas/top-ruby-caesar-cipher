@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 def substrings(string, dictionary)
-  dictionary.reduce(Hash.new(0)) do |result, word|
+  dictionary.each_with_object(Hash.new(0)) do |word, result|
     string.downcase.scan(word.downcase) { result[word] += 1 }
-    result
   end
 end
 
